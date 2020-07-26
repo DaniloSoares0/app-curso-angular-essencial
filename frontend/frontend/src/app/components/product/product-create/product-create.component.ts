@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { Router} from '@angular/router'
+import { Product } from '../product.model';
 
 @Component({
   selector: 'app-product-create',
@@ -9,6 +10,13 @@ import { Router} from '@angular/router'
 })
 
 export class ProductCreateComponent implements OnInit {
+
+  //control the two way databinding
+product: Product={
+  name: "",
+  price:null
+}
+
   //importing a service by dependency injection
   constructor(private productService: ProductService,
     private router: Router) { }
@@ -17,7 +25,10 @@ export class ProductCreateComponent implements OnInit {
   }
  
   createProduct(): void{
-    this.productService.showMessage("Operação realizada com sucesso !")
+   // returns an Observer,
+    this.productService.create(this.product).subscribe(()=>{
+      this.productService.showMessage("Operação realizada com sucesso !")
+    })
   }
 
   cancel(): void{
