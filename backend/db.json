@@ -1,38 +1,66 @@
 {
-    "products":[
-      {  
-        "id": 1,
-        "name": "Caneta BIC preta",
-        "price":"5.89"
-      },
-      {  
-        "id": 2,
-        "name": "Notebook Mac Pro",
-        "price":"12000.89"
-      },
-      {  
-        "id": 3,
-        "name": "Samsung S20",
-        "price":"5.89"
-      }],
-
-    "posts": [
-      {
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-      }
-    ],
-
-    "comments": [
-      {
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-      }
-    ],
-    
-    "profile": {
-      "name": "typicode"
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC preta",
+      "price": "5.89"
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": "12000.89"
+    },
+    {
+      "id": 3,
+      "name": "Samsung S20",
+      "price": "5.89"
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.98,
+      "id": 4
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.98,
+      "id": 5
+    },
+    {
+      "name": "Produto de teste",
+      "price": 125.98,
+      "id": 6
+    },
+    {
+      "name": "Produto de teste2",
+      "price": 125.98,
+      "id": 7
+    },
+    {
+      "name": "Produto de teste7",
+      "price": 125.98,
+      "id": 8
+    },
+    {
+      "name": "veio do form",
+      "price": "9.99",
+      "id": 9
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
   }
+}
