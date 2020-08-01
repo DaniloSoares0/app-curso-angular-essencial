@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import {MatSnackBar} from '@angular/material/snack-bar'
 import { Product } from './product.model';
 import { Observable } from 'rxjs';
-
+import { map } from 'rxjs/operators';
 //be carreful, this service is an singleton
 @Injectable({
   providedIn: 'root'
@@ -30,4 +30,5 @@ export class ProductService {
   read(): Observable<Product[]>{
     return this.http.get<Product[]>(this.baseUrl)
   }
+
 }
