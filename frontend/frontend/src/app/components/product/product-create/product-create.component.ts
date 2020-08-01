@@ -27,6 +27,7 @@ product: Product={
   createProduct(): void{
    // returns an Observer,
     this.productService.create(this.product).subscribe(()=>{
+      this.router.navigate(['/products'])
       this.productService.showMessage("Operação realizada com sucesso !")
     })
   }
@@ -34,5 +35,4 @@ product: Product={
   cancel(): void{
     this.router.navigate(['/products'])
   }
-
 }
